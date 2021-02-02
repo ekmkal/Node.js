@@ -1,0 +1,16 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    font-size: 5rem;
+    color: green;
+    border: 2px solid brown;
+    text-align: center;
+}
+
+#content{
+    font-size: 3rem;
+    color: chocolate;
+    text-align: center;
+}

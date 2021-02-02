@@ -3,7 +3,7 @@
  ** Exercise 1: Pad numbers 
  * 
  * In this file use the padLeft function from padLeft.js to
- * pad the numbers to exactly 5 spaces and log them to the console
+ * pad the numbers to exactly 4 spaces and log them to the console
  * 
  * Expected output (replace the underscore with spaces):
  * 
@@ -19,3 +19,8 @@
 let numbers = [ "12", "846", "2", "1236" ];
 
 // YOUR CODE GOES HERE
+const padLeft = require('./padLeft');
+
+numbers.forEach(num => {
+    padLeft(num, 5, '_');
+});
