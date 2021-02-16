@@ -28,7 +28,7 @@ app.put('/blogs/:title', (req, res) => {
     res.end('ok');
   } else {
     // Handling error
-    res.status(400);
+    res.status(404);
     res.send('This post does not exist!');
     return;
   };
