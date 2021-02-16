@@ -61,7 +61,7 @@ app.get('/blogs/:title', (req, res) => {
     res.send(post);
   } else {
     // Handling error
-    res.status(400);
+    res.status(404);
     res.send('This post does not exist!');
     return;
   };
