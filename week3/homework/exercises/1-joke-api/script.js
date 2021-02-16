@@ -10,9 +10,16 @@
  * - Print the entire response to the console to see how it is structured.
  */
 
-function printChuckNorrisJoke() {
-  // YOUR CODE GOES IN HERE
+const { default: fetch } = require("node-fetch");
 
-}
+async function printChuckNorrisJoke() {
+  try {
+    const fetchResponse = await fetch('http://api.icndb.com/jokes/random');
+    const jsonData = await fetchResponse.json();
+    console.log(jsonData.value.joke);
+  } catch (err) {
+    console.error(err.message);
+  };
+};
 
 printChuckNorrisJoke();
